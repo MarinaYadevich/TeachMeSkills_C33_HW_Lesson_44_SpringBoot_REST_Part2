@@ -1,6 +1,5 @@
 ## TeachMeSkills_C33_HW_Lesson_43_SpringBoot_REST_Part1
 
 ### HomeWork
-Cоздать Spring Boot REST проект для имитации работы интернет-банкинга. Создать
-методы для получения информации о клиенте, информации о платежной карте, метод
-для перевода суммы с одной карты на другую.
+Create a Spring Boot REST project to simulate online banking. Create methods to get client information, 
+payment card information, a method to transfer an amount from one card to another.
