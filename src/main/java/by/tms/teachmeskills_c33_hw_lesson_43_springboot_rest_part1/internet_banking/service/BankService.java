@@ -1,9 +1,9 @@
-package by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.service;
+package by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.service;
 
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.model.Card;
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.model.Client;
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.repository.CardRepository;
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.repository.ClientRepository;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.model.Card;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.model.Client;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.repository.CardRepository;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.repository.ClientRepository;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;

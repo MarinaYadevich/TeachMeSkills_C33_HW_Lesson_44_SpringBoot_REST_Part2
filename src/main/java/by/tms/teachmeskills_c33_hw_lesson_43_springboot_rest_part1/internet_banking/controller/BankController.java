@@ -1,9 +1,9 @@
-package by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.controller;
+package by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.controller;
 
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.dto.TransferRequestDto;
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.model.Card;
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.model.Client;
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.service.BankService;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.dto.TransferRequestDto;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.model.Card;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.model.Client;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.service.BankService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

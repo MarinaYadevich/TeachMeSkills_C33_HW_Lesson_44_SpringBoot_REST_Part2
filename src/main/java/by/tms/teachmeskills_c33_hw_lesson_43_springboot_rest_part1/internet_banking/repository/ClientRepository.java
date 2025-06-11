@@ -1,6 +1,6 @@
-package by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.repository;
+package by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.repository;
 
-import by.tms.teachmeskills_c33_hw_lesson43_springboot_rest_part1.internet_banking.model.Client;
+import by.tms.teachmeskills_c33_hw_lesson_43_springboot_rest_part1.internet_banking.model.Client;
 import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
