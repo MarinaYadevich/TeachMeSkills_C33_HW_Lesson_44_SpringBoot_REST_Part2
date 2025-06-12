@@ -10,8 +10,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Map;
 
 @RestController
@@ -22,6 +26,31 @@ public class BankController {
     public BankController(BankService bankService) {
         this.bankService = bankService;
     }
+
+    @PostMapping("/upload")
+    public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file) {
+        if (file.isEmpty()) {
+            return ResponseEntity.badRequest().body("File is empty.");
+        }
+
+        try {
+            String pathDir = System.getProperty("user.dir");
+            File uploadDirFile = new File(pathDir + File.separator + "uploads");
+
+            if (!uploadDirFile.exists()) {
+                uploadDirFile.mkdirs();
+            }
+
+            File dest = new File(uploadDirFile, file.getOriginalFilename());
+            file.transferTo(dest);
+
+            return ResponseEntity.ok("File uploaded successfully: " + file.getOriginalFilename());
+        } catch (IOException e) {
+            return ResponseEntity.internalServerError().body("Error when uploading: " + e.getMessage());
+        }
+    }
+
+
 
     @GetMapping("/cards")
     public ResponseEntity<Map<Long, Card>> getAllCards() {
